@@ -84,11 +84,11 @@ export class DiceRoller extends Contract {
     return this.lastRoll.value
   }
 }
-
+---
 ##laura link
 https://lora.algokit.io/testnet/application/745460944
 <img width="1919" height="877" alt="image" src="https://github.com/user-attachments/assets/315c540b-23f7-457b-88b4-58eba4a4d82b" />
-
+---
 
 ```ts
 //paste your code
