@@ -58,13 +58,6 @@ It demonstrates how to:
 
 ---
 
-## 🔗 Deployed Smart Contract  
-
-
-  
-
----
-
 ## 📜 Smart Contract Code  
 Contract Address: import { Contract , GlobalState } from '@algorandfoundation/algorand-typescript'
 
