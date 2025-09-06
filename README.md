@@ -60,6 +60,12 @@ It demonstrates how to:
 
 ## 🔗 Deployed Smart Contract  
 
+
+  
+
+---
+
+## 📜 Smart Contract Code  
 Contract Address: import { Contract , GlobalState } from '@algorandfoundation/algorand-typescript'
 
 // A simple Dice Roller contract
@@ -85,11 +91,6 @@ export class DiceRoller extends Contract {
     return this.lastRoll.value
   }
 }
-  
-
----
-
-## 📜 Smart Contract Code  
 
 ```ts
 //paste your code
