@@ -60,7 +60,32 @@ It demonstrates how to:
 
 ## 🔗 Deployed Smart Contract  
 
-Contract Address: **XXX**  
+Contract Address: import { Contract , GlobalState } from '@algorandfoundation/algorand-typescript'
+
+// A simple Dice Roller contract
+export class DiceRoller extends Contract {
+  // Store the last rolled dice value in global state
+  lastRoll = GlobalState<number>({ key: "last_roll", initialValue: 0 })
+
+  // Function to roll the dice
+  // The caller passes in a "seed" number (like block timestamp, tx sender, etc.)
+  Roll(seed: number): number {
+    // Very simple pseudo-random dice roll (NOT secure randomness)
+    const diceValue = (seed % 6) + 1
+
+    // Store the result in global state
+    this.lastRoll.value = diceValue
+
+    // Return the rolled dice value
+    return diceValue
+  }
+
+  // Function to get the last rolled value
+  GetLastRoll(): number {
+    return this.lastRoll.value
+  }
+}
+  
 
 ---
 
